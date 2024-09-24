@@ -1,4 +1,6 @@
 SUM = 0
+
+# adjusted digits to count overlapping numbers
 letters = {"one": "o1e", "two": "t2o", "three": "t3e", "four": "4", "five": "5e", "six": "6", "seven": "7n", "eight": "e8t", "nine": "n9e"}
 
 # access input line by line
@@ -10,7 +12,7 @@ with open("input.txt", "r") as file:
         # will store all the numbers in [index,number] pair
         digits = []
 
-        # find all the numbers in string format in the input
+        # find all the numbers in string format in the input and replace them withg numeric part
         for i in letters:
             flag = True
             while flag:
